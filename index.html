@@ -1,0 +1,152 @@
+﻿<!DOCTYPE html>
+<html lang="he">
+<head>
+    <meta charset="utf-8" />
+    <title>traveli- עמוד הבית</title>
+    <meta name="description" content="אתר למציאת חופשה בישראל" />
+    <meta name="keywords" content="צימרים, בתי מלון,חופשה בישראל" />
+    <meta name="author" content="shiran gabay" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <link rel="icon" href="images/favicon.png">
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/pure-min.css" integrity="sha384-oAOxQR6DkCoMliIh8yFnu25d7Eq/PHS21PClpwjOTeU2jRSq11vu66rf90/cZr47" crossorigin="anonymous">
+
+ 
+    <link href="styles/style.css" rel="stylesheet" />
+
+    <!-- JS -->
+    <script src="jScripts/jquery-1.12.0.min.js"></script>
+    <script src="jScripts/JavaScript.js" type="text/javascript">  </script>
+
+
+</head>
+<body id="index">
+    <div id="container">
+        <header>
+            <div class="header">
+                <div class="inner_header">
+                    <div class="logo">
+                        <a href="index.html"><img id="logo" src="images/traveli logo.png" alt="traveli logo" /></a>
+                    
+        </div>
+        <nav aria-label="תפריט ראשי">
+            <ul>
+                 <li><a href="north.html">צפון</a></li>
+                <li> <a href="center.html">מרכז</a></li>
+                <li><a href="south.html">דרום</a></li>
+                <li><a href="about.html">אודות</a></li>
+                <li><a href="contactUs.html">צור קשר</a></li>
+                <li><a href="#" class="notActive">המלצות</a></li>
+            </ul>
+                </nav> 
+        </div>
+        </div>
+        </header>
+        <main>
+            <!--פתיח של עמוד הבית-->
+            <div id="start">
+            <h1 class="all" id="head1index">ברוכים הבאים לאתר Traveli</h1>
+            <h1 class="all" id="head2index">האתר שיעזור לכם</h1>
+            <h1 class="all" id="head3index">למצוא את החופשה המושלמת בשבילכם בישראל</h1><br/><br/>
+            </div>
+            <img id="arrow" src="images/downarrow.png"/>
+            <!--מסגרת שכתוב בתוכה טקסט-->
+            <div class="content">
+                <p class="intro">באתר שלנו תוכלו למצוא את החופשה הבאה שלכם בארץ בקלות וללא מאמץ מרובה במיוחד</p>
+                <p class="intro"> כל שאתם צריכים לעשות הוא להיכנס לאתר ולמצוא מגוון המלצות מעולות לכל סוגי החופשות</p>
+                <p class="intro">אתם יכולים לקרוא פרטים על המקום,לראות תמונות ולמצוא ים של המלצות וביקורות</p>
+                <p class="intro">וכמובן שאם אתם צריכים עזרה או רוצים לשמוע עוד </p>
+                <p class="intro">אתם מוזמנים לפנות אלינו ונארגן לכם יחדיו את <span>חופשת החלומות</span></p>
+                <p class="intro">לגלריה של תמונות מהממות <span>גללו עוד</span></p>
+            </div>
+            <!--קונטיינר שמכיל את כל הגלריה-->
+            <div class="gallery_container">
+
+              <!--התמונות הגדולות בגלריה-->
+                <div class="myPictures" id="default">
+                  <div class="picNumber">6 / 1</div>
+                    <img class="images" src="images/ahuzatHanofHatzfoni.jpeg" alt="תמונה של אחוזת הנוף הצפוני">
+                </div>
+              
+                <div class="myPictures">
+                  <div class="picNumber">6 / 2</div>
+                    <img class="images" src="images/bereshit.jpeg" alt="תמונה של מלון בראשית">
+                </div>
+              
+                <div class="myPictures">
+                  <div class="picNumber">6 / 3</div>
+                    <img class="images" src="images/ganeden.jpeg" alt="תמונה של צימר ג׳אן עדן">
+                </div>
+              
+                <div class="myPictures">
+                  <div class="picNumber">6 / 4</div>
+                    <img class="images" src="images/royalBeach.jpeg" alt="תמונה של מלון רויאל ביץ׳">
+                </div>
+              
+                <div class="myPictures">
+                  <div class="picNumber">6 / 5</div>
+                    <img class="images" src="images/keshetYonatan.jpeg" alt="תמונה של צימר קשת יהונתן">
+                </div>
+              
+                <div class="myPictures">
+                  <div class="picNumber">6 / 6</div>
+                    <img class="images" src="images/ganim.jpeg" alt="תמונה של מלון גנים" >
+                </div>
+              
+                <!--פונקציות שמפעילות את החצים בגלריה-->
+                <a class="prev cursor" onclick="nextPic()">&#10094;</a>
+                <a class="next cursor" onclick="previousPic()">&#10095;</a>
+              
+              
+                <div class="text">
+                  <p id="picText"></p>
+                </div>
+              
+               <!--תפריט של תמונות בגלריה-->
+                <div class="picMenu">
+                  <div class="picSlide">
+                    <img class="opacity cursor" src="images/ahuzatHanofHatzfoni.jpeg"  onclick="myPic(1)" alt="אחוזת הנוף הצפוני">
+                  </div>
+                  <div class="picSlide"> 
+                    <img class="opacity cursor" src="images/bereshit.jpeg"  onclick="myPic(2)" alt="מלון בראשית">
+                  </div>
+                  <div class="picSlide">
+                    <img class="opacity cursor" src="images/ganeden.jpeg"  onclick="myPic(3)" alt="צימר ג׳אן עדן">
+                  </div>
+                  <div class="picSlide">
+                    <img class="opacity cursor" src="images/royalBeach.jpeg"  onclick="myPic(4)" alt="מלון רויאל ביץ׳">
+                  </div>
+                  <div class="picSlide">
+                    <img class="opacity cursor" src="images/keshetYonatan.jpeg"  onclick="myPic(5)" alt="צימר קשת יהונתן">
+                  </div> 
+                  <div class="picSlide">
+                    <img class="opacity cursor" src="images/ganim.jpeg"  onclick="myPic(6)" alt="מלון גנים">
+                  </div>
+                </div>
+              </div>
+              <!--קישורים למרכז, צפון ודרום מתחתית עמוד הבית-->
+            <div id="north" class="menu">
+                <a href="north.html">צפון</a>
+            </div>
+            <div id="center" class="menu">
+                <a href="center.html">מרכז</a>
+            </div>
+            <div id="south" class="menu">
+                <a href="south.html">דרום</a>
+            </div>
+        </main>
+ 
+                        
+        <footer>
+            <ul>
+                <li><a href="contactUs.html">צור קשר</a></li>
+                <li><a href="siteMap.html">מפת האתר</a></li>
+                <li><a href="about.html">אודות</a></li>
+            </ul>
+            <p>Traveli 2022</p>
+            <p>@כל הזכויות שמורות לשירן גבאי@</p>
+            
+        </footer>
+    </div>
+</body>
+</html>

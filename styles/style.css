@@ -1,0 +1,866 @@
+﻿*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+
+}
+/*הטמעת פונט בשם limonit */
+@font-face {
+    font-family: 'limonit';
+    src: url('../fonts/Limonit-Light.eot');
+    src: url('../fonts/Limonit-Light.eot') format('embedded-opentype'),url('../fonts/Limonit-Light.ttf') format('truetype');
+}
+body{
+    direction: rtl;
+    font-family:limonit;
+    width: 100% ;
+    max-width: 1280px;
+    margin: 0 auto;
+    background: url('../images/bg1.jpg') no-repeat center;
+    background-size:cover;
+    
+    
+}
+/*בניית התפריט של ה header */
+.header{
+    width: 100%;
+    height: 140px;
+    display: block;
+    
+    
+}
+/*הגדרות לתגית של ה header */
+header{
+    margin: 0 auto;
+    width: 100%;
+    background-color: seashell;
+}
+
+.inner_header{
+    
+    height: 150px;
+    display: block;
+    
+    right: 120px;
+     
+}
+.logo{
+    height: 100%;
+    display: inline-block;
+   
+}
+#logo{
+    width: 100%;
+    max-width: 150px;
+    height: auto;
+   
+   
+}
+nav{
+    float:left;
+    height: 100%;
+    width: 600px;
+    display: inline-block;
+    position: relative;
+    top:100px;
+    left: 320px;
+}
+nav a{
+    height: 100%;
+    display: inline-block;
+    float: left;
+    padding: 0px 15px;
+    
+}
+nav li a{
+    display:inline-block;
+    float: right;
+    color: black;
+    font-size:xx-large;
+    position: relative;
+    bottom: 10px;
+}
+ nav ul li{
+    display: inline-block;
+    background-color:#73D9D9;
+    height: 30px;
+    
+    text-decoration: none;
+    text-align: center;
+    margin-right: 15px;
+    font-weight: bold;
+
+
+}
+nav ul li:hover{
+background-color:darkcyan;
+}
+nav ul li a:hover{
+    color: cornsilk;
+    font-weight: bold;
+}
+/*עיצוב לכותרות h1 בדף הבית*/
+ .all {
+    font-size: 7em;
+    font-weight: bolder;
+    color: black;
+    display: block;
+    
+ }
+
+#head1index{
+    
+    display: inline-block;
+}
+
+
+/* עיצוב לתיבהב עם התוכן בעמוד הבית ובאודות */
+.content{
+    font-size: 3em;
+    background-color:antiquewhite;
+    filter: drop-shadow(8px 8px 10px);
+    position: relative;
+    margin: 0 auto;
+    margin-bottom: 180px;
+   
+    width: 80%;
+    box-sizing: border-box;
+    padding-right: 15px;
+    border-radius: 10px;
+    
+}
+/* עיצוב לחץ בעמוד הבית */
+#arrow{
+    position: relative;
+    right: 600px;
+    bottom: 30px;
+    width: 100%;
+    max-width: 60px;
+    height: auto;
+    transition: all 3s linear;
+}
+#arrow:hover{
+    height: 80px;
+
+}
+/* עיצוב לטקסט בתוך תיבת התוכן באודות ובעמוד  הבית */
+.intro{
+    
+    color:lightseagreen;
+    font-size: 1em;
+
+    
+}
+span{
+    font-weight: bold;
+    font-size: 1em;
+    transition: all 2s linear;
+}
+/*עיצוב למלבנים בתחתית דף הבית */
+#north, #south, #center  {
+    display: inline-block;
+    background-color:#73D9D9;
+    height: 100px;
+    width:300px;
+    margin: 0px 35px;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+    font-size: 5em;
+    position: relative;
+    right: 88px;
+    bottom: 80px;
+  
+}
+.menu a:hover{
+    color: navy;
+    text-decoration: underline;
+}
+a{
+    color: black;
+}
+/* עיצוב לתפריט פירורי לחם */
+nav ol li{
+    display:inline-block;
+    position: relative ;
+    height: 30px;
+    text-decoration: none;
+    text-align: center;
+    left: 400px;
+    font-weight: bold;
+    font-size: 2em;
+    bottom: 50px;
+    
+}
+.place{
+    bottom: 108px;
+}
+nav ol li a{
+  
+    position: relative;
+    display:inline-block;
+    bottom: 60px;
+    text-decoration: underline;
+}
+nav ol li a:hover{
+    color: navy;
+}
+nav ol li:after{
+    content: ">>";
+    position: relative;
+    bottom: 55px;
+}
+nav ol li:last-child:after{
+    content: "";
+}
+/* עיצוב לעמוד האודות */
+
+#level1{
+    font-size: 10em;
+    margin-right: 500px;
+    
+}
+#level2{
+    font-size: 6em;
+    
+    text-align: center;
+}
+.level3{
+    
+    position: relative;
+    font-size: 4em;
+    top:100px;
+}
+#aboutWeb{
+    position: relative;
+    top:125px;
+    
+}
+
+#aboutMe{
+    position: relative;
+    top:130px;
+   
+    
+}
+.pages{
+    color:navy;
+    font-size: 3em;
+    text-decoration: underline;
+    position: relative;
+    top:100px
+}
+
+#mouse{
+    color: navy;
+    font-size: 3em;
+    position: relative;
+    top: 100px;
+    text-decoration: underline;
+  
+    
+}
+
+.box{
+   display: inline-block;
+   position: relative;
+    width: 300px;
+    height: 300px;
+    border: 2px solid black;
+    border-radius: 5px;
+    margin: 10px;
+   background-color: cadetblue;
+   padding-left: 30px;
+   padding-top: 30px;
+text-align: center;
+
+
+}
+/* עיצוב לעמודים צפון,דרום ומרכז */
+.textIn{
+    font-size: 4em;
+    color: black;
+    margin: 30px;
+    text-align: center;
+}
+.textIn:hover{
+    color:whitesmoke;
+}
+#zimmer{
+position: relative;
+right: 1000px;
+top: 54px;
+
+
+}
+#zimmer:hover{
+    background-image: url('../images/ganeden.jpeg') ;
+    background-size: 350px 350px;
+    background-repeat: no-repeat;
+}
+
+#hotel{
+right: 20px;
+top: 54px;
+
+
+
+}
+#camping{
+right: 20px;
+top:54px;
+
+
+}
+#attraction{
+right: 0;
+bottom: 267px;
+
+}
+#camping:hover{
+    background-image: url('../images/camping.jpg');
+    background-size: 350px 350px;
+    background-repeat: no-repeat;
+
+}
+#hotel:hover{
+    background-image: url('../images/royalBeach.jpeg');
+    background-size: 350px 350px ;
+    background-repeat: no-repeat;
+}
+.box2{
+    background-color: cadetblue;
+}
+#attraction:hover{
+    background-image: url('../images/attraction.jpeg');
+    background-size: 350px 350px ;
+    background-repeat: no-repeat;
+}
+/* עיצוב לעמודים של בתי המלון בדרום והצימרים בצפון */
+.image{
+    width: 500px;
+    height: 500px;
+    display: inline-block;
+    position: relative;
+}
+iframe{
+    width: 250px;
+    height: 250px;
+    display: inline-block;
+    
+    
+    
+}
+.zimmerText{
+    font-size: 2em;
+    right: 500px;
+}
+.details{
+    font-size:2em;
+    right: 500px;
+    text-decoration: underline;
+    
+}
+.details:hover{
+    color: navy;
+}
+.mainContent{
+    height:fit-content; 
+}
+.head2{
+    font-size: 5em;
+}
+section{
+    font-size: 2em;
+    font-weight: bold;
+}
+#start{
+    text-align: center;
+}
+form{
+    width: 100%;
+    max-width: 1280px;
+    height: 1200px;
+   
+}
+/* עיצוב לפוטר */
+footer{
+    background-color: seashell;
+    
+}
+footer ul li{
+    display: inline-block;
+    
+   
+    
+    text-align: center;
+    margin-right: 250px;
+    
+    position: relative;
+    
+}
+footer li a{
+    display:inline-block;
+   
+    height: 40px;
+    color: black;
+    font-size:xx-large;
+    padding: 5px;
+    font-weight: bold;
+    color: navy;
+    text-decoration: underline;
+}
+footer p{
+    font-size: 1.5em;
+    text-align: center;
+    font-weight: bold;
+}
+/* עיצוב של תפריט פירורי לחם */
+.southBread ol li {
+    position: relative;
+    bottom: 94px;
+    margin-right: 24px;
+}
+.southBread ol li:nth-child(2){
+    position: relative;
+    left: 430px;
+}
+
+.southBread .place{
+position: relative;
+bottom: 150px;
+left: 450px;
+
+}
+.head1{
+    text-align: center;
+   font-size: 7em;
+
+}
+/* עיצוב למפות בעמודים של בתי המלון והצימרים */
+#divClubHotel iframe{
+  position: relative;
+  right: 500px;
+  top: 270px;
+}
+#divRoyalBeach iframe{
+    position: relative;
+  right: 500px;
+  top: 180px;
+}
+#divAstralNirvana iframe{
+    position: relative;
+  right: 500px;
+  top: 250px;
+}
+#divGanim iframe{
+    position: relative;
+  right: 500px;
+  top: 300px;
+}
+#divLeonardo iframe{
+    position: relative;
+  right: 500px;
+  top: 250px;
+}
+#divBereshit iframe{
+    position: relative;
+  right: 500px;
+  top: 220px;
+}
+#divKeshetYonatan iframe{
+    position: relative;
+    right: 500px;
+    top: 240px;
+}
+#divShavit iframe{
+    position: relative;
+    right: 500px;
+    top: 300px;
+}
+#divGanEden iframe{
+    position: relative;
+    right: 500px;
+    top: 300px;
+}
+#divHanofHAtzfoni iframe{
+    position: relative;
+    right: 500px;
+    top: 300px;
+}
+#divKinorot iframe{
+    position: relative;
+    right: 500px;
+    top: 300px;  
+}
+#divHalomotNaftali iframe{
+    position: relative;
+    right: 500px;
+    top: 250px; 
+}
+#head1{
+    
+    position: relative;
+    right: 480px;
+    font-size: 7em;
+    margin-left: 480px;
+}
+/* עיצוב לעמודים שלא פותחו באתר */
+.notActive{
+    color: #6b6b6b;
+    cursor: not-allowed;
+}
+/* עיצוב של מה שקשור למפת האתר */
+.siteMap{
+    display: inline-block;
+    font-size: 4em;
+    text-align: center;
+    margin-right: 130px;
+    position: relative;
+    bottom: 50px;
+    
+    
+}
+#siteMapHead{
+    font-size: 7em;
+    text-align: center;
+    position: relative;
+    right: 280px;
+    margin-left: 280px;
+   
+    
+}
+.siteMap h2{
+    font-size: 1em;
+    text-decoration: underline;
+}
+.siteMap .active{
+    font-weight: bold;
+}
+.siteMap .active:hover{
+text-decoration: underline;
+color: navy;
+
+}
+#shonot{
+    position: relative;
+   bottom: 125px;
+
+
+  
+    
+}
+
+.siteMap a{
+    background-color:seashell;
+    border-radius: 10px;
+    text-align: center;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+}
+/* עיצוב לתמונה בעמוד אודות */
+#myPic{
+    width: 150px;
+    height: 150px;
+    margin-right: 530px;
+    margin-bottom: 20px;
+    
+    
+}
+#me{
+    display: inline-block;
+}
+#myPic:hover{
+  
+    content: url('../images/halomotNaftaliCircle.png');
+    cursor: pointer;
+}
+
+.notShow:hover{
+  
+    display: inline;
+}
+.notShow{
+    display: none;
+        position: absolute;
+}
+/* עיצוב לטופס צור קשר */
+.contain{
+    position: relative;
+    justify-content: center;
+    align-content: center;
+    padding: 20px 100px;
+    direction: ltr;
+}
+.contain::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: url('../images/bg1.jpg') no-repeat center;
+    background-size: cover;
+    z-index: -1;
+    filter: blur(50px);
+}
+.contact-box{
+    
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0px 0px 19px 5px rgba(0, 0, 0, 0.19);
+}
+.left{
+    height: 100%;
+    background: url('../images/bg1.jpg') no-repeat center;
+    background-size: cover;
+}
+.right{
+    padding: 25px 40px;
+    height: 240vh;
+}
+#contact-us{
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    position: relative;
+    font-size: 4em;
+}
+#contact-us::after{
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    height: 6px;
+    width: 70px;
+    border-radius: 2px;
+    background-color: #2ecc;
+
+}
+.field{
+    padding: 0.5em 1em;
+    background-color: rgba(230, 230,230, 0.6);
+    font-size: 1.1em;
+    margin-bottom: 22px;
+    transition: .3s;
+    outline: none;
+    border: 2px solid #73D9D9;
+}
+.field:hover{
+    background-color: rgba(0, 0,0, 0.1);
+}
+.field:focus{
+    background-color: #fff;
+    border: 2px solid rgba(30, 85, 250, 0.47);
+}
+.field area{
+    min-height: 150px;
+}
+.btn{
+    width: 60%;
+    font-size: 1.1em;
+    background-color: #2ecc71;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    color: #fff;
+    transition: .3s;
+    font-family: 'limonit';
+    padding-bottom: 10px;
+    position: relative;
+   bottom: 30px;
+}
+.btn:hover{
+    background-color: #27ae60;
+}
+#contactIntro p{
+    position: relative;
+text-align: center;
+font-size: 3em;
+bottom: 140px;
+}
+#contactIntro h1{
+    display:inline-block ;
+    font-size: 8em;
+    font-weight: bolder;
+    text-align: center;
+    margin-right: 520px;
+    position: relative;
+    bottom:170px;
+}
+label{
+    font-size: 2em;
+    font-weight: bold;
+}
+legend{
+    font-size: 2em;
+    font-weight: bold;
+}
+textarea{
+    width: 90%;
+}
+
+label span{
+    color: red;
+}
+.field span{
+    font-size: 1.5em;
+}
+/* כותרות לעמודים של צפון, דרום ומרכז */
+#northHead, #southHead, #centerHead{
+    font-size: 7em;
+    position: relative;
+    right: 550px;
+    margin-left: 550px;
+}
+
+* {
+    box-sizing: border-box;
+  }
+  #default{
+    display: block;
+  }
+  
+  /* Position the image container (needed to position the left and right arrows) */
+  .gallery_container {
+    position: relative;
+    width: 800px;
+    margin: 0 auto;
+   bottom: 130px;
+  
+  }
+  
+  /* Hide the images by default */
+  .myPictures {
+    display: none;
+  }
+  
+  /* Add a pointer when hovering over the thumbnail images */
+  .cursor {
+    cursor: pointer;
+  }
+  
+  /* Next & previous buttons */
+  .prev,
+  .next {
+   
+    position: absolute;
+    top: 30%;
+    width: auto;
+    padding: 16px;
+   
+    color:seashell;
+    font-weight: bold;
+    font-size: 3em;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .prev {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  .next {
+    left: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover {
+    background-color: navy ;
+    border-radius: 7px;
+  }
+  
+  /* Number text (1/3 etc) */
+  .picNumber {
+    
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+    font-size: 3em;
+    font-family: 'limonit';
+    font-weight: bolder;
+    background-color: seashell;
+    color: navy;
+    left: 0;
+  }
+  
+ 
+  #picText {
+    text-align: center;
+    background-color: seashell;
+    padding: 2px 16px;
+    color:navy;
+    margin: 0 auto;
+ width: fit-content;
+ font-size: 3em;
+ position: absolute;
+ right: 0;
+ top: 0;
+ font-family: 'limonit';
+ font-weight: bold;
+ 
+  }
+
+
+  .picMenu{
+    position: relative;
+    width: 800px;
+    margin: 0 auto;
+  }
+  .picMenu img{
+    width: 100%;
+    height: 10vh;
+    max-width: 150px;
+    border-radius: 5px;
+  
+  }
+  .myPictures img{
+    width: 100%;
+    height: 50vh;
+    border-radius: 7px;
+    
+  }
+  .picMenu:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+ 
+  .picSlide {
+    float: left;
+    width: 16.66%;
+
+  }
+
+  .opacity {
+    opacity: 0.5;
+  }
+  
+  .active,
+  .opacity:hover {
+    opacity: 1;
+  }
+  .picNumber{
+    font-size: 3em;
+    font-family: 'limonit';
+    font-weight: bolder;
+    background-color: seashell;
+    color: navy;
+  
+  }
+  .picSlide img{
+    width: 100%;
+  }
+  .opacity:active{
+    opacity: 1;
+  }
+ 

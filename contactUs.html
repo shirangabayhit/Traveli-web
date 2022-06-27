@@ -1,0 +1,142 @@
+﻿<!DOCTYPE html>
+<html lang="he">
+<head>
+    <meta charset="utf-8" />
+    <title>traveli- צור קשר</title>
+    <meta name="description" content="אתר למציאת חופשה בישראל" />
+    <meta name="keywords" content="צימרים, בתי מלון,חופשה בישראל" />
+    <meta name="author" content="shiran gabay" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <link rel="icon" href="images/favicon.png">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/pure-min.css" integrity="sha384-oAOxQR6DkCoMliIh8yFnu25d7Eq/PHS21PClpwjOTeU2jRSq11vu66rf90/cZr47" crossorigin="anonymous">
+
+   
+    <link href="styles/style.css" rel="stylesheet" />
+
+    <!-- JS -->
+    <script src="jScripts/jquery-1.12.0.min.js"></script>
+
+
+</head>
+<body >
+    <div id="container">
+        <header>
+            <div class="header">
+                <div class="inner_header">
+                    <div class="logo">
+                        <a href="index.html"><img id="logo" src="images/traveli logo.png" alt="traveli logo" /></a>
+    
+                    
+                
+                    </div>
+                    <nav aria-label="תפריט ראשי">
+                <ul>
+                     <li><a href="north.html">צפון</a></li>
+                    <li> <a href="center.html">מרכז</a></li>
+                    <li><a href="south.html">דרום</a></li>
+                    <li><a href="about.html">אודות</a></li>
+                    <li><a href="contactUs.html">צור קשר</a></li>
+                    <li><a href="#" class="notActive">המלצות</li>
+                </ul>
+                    </nav>
+                    <nav aria-label="תפריט פירורי לחם">
+                        <ol>
+                            <li><a href="index.html">דף הבית</a></li>
+                            <li class="place">צור קשר</li>
+                        </ol>
+                    </nav>
+                    
+                </div>
+               <br/><br/>
+            </div>
+        </header><br/><br/>
+        <!--הקדמה לטופס צור קשר-->
+            <div id="contactIntro">
+                <h1>צור קשר</h1>
+                <p>אתם לא בטוחים איזה חופשה אתם רוצים?</p>
+                <p>בא לכם שנעזור לכם למצוא את חופשת החלומות האידיאלית עבורכם?</p>
+                <p>אנחנו תמיד פה בשבילכם</p>
+                <p>מלאו את הפרטים בטופס למטה ונחזור אליכם בהקדם! </p>    
+            </div><br/><br/>
+            <!--טופס צור קשר-->
+            <div class="contain">
+                <div class="contact-box">
+                    <div class="left"></div>
+                    <div class="right">
+            <h2 id="contact-us">צרו קשר</h2><br/><br/>
+            <form aria-label="טופס צור קשר">
+                <input type="hidden" id="myMail" class="field" name="name" value="mirashina69@gmail.com">
+                <label for="firstName">שם פרטי:<span>*(חובה)</span></label><br/>
+                <input type="text" name="firstName" class="field" id="firstName" required  aria-required="true" autocomplete="given-name"/><br/><br/>
+                <label for="lastName">שם משפחה:<span>*(חובה)</span></label><br/>
+                <input type="text" name="lastName" class="field" id="lastName" required aria-required="true"/><br/><br/>
+                <label for="email">כתובת מייל:<span>*(חובה)</span></label><br/>
+                <input type="email" id="email" class="field" name="email" multiple required aria-required="true" autocomplete="email"><br/><br/>
+                <label for="tel">מספר טלפון:<span>*(חובה)</span></label><br/> 
+                <input type="tel" id="tel" class="field" name="tel" multiple required aria-required="true" autocomplete="tel"><br/><br/>
+    
+                <label for="gender">מין</label><br/>
+                <select id="gender" class="field">
+                    <option value="1" >גבר</option>
+                    <option value="2" selected>אישה</option>
+                </select><br/><br/>
+               
+                <fieldset class="field">
+                    <legend>מספר המבוגרים בחופשה</legend>
+                    <input type="radio" name="adults"/><span>מבוגר אחד</span><br/>
+                    <input type="radio" name="adults"/><span>שני מבוגרים</span><br/>
+                    <input type="radio" name="adults"/><span>שלושה מבוגרים</span><br/>
+                    <input type="radio" name="adults"/><span>ארבעה מבוגרים</span><br/>
+                    <input type="radio" name="adults"/><span>אחר</span><br/>
+                </fieldset><br/><br/>
+    
+                <fieldset class="field">
+                    <legend>מספר הילדים בחופשה</legend>
+                    <input type="radio" name="chidrens"/><span>ילד אחד</span><br/>
+                    <input type="radio" name="chidrens"/><span>שני ילדים</span><br/>
+                    <input type="radio" name="chidrens"/><span>שלושה ילדים</span><br/>
+                    <input type="radio" name="chidrens"/><span>ארבעה ילדים</span><br/>
+                    <input type="radio" name="chidrens"/><span>אחר</span><br/>
+                </fieldset><br/><br/>
+                <fieldset class="field">
+                    <legend>סמנו את סוג החופשה שאתם מחפשים</legend>
+                    <input type="checkbox"/><span>בטן גב</span><br/>
+                    <input type="checkbox"/><span>שופינג</span><br/>
+                    <input type="checkbox"/><span>טבע</span><br/>
+                    <input type="checkbox"/><span>מנוחה</span><br/>
+                    <input type="checkbox"/><span>אוכל טוב</span><br/>
+                    <input type="checkbox"/><span>הליכה מרובה</span><br/>
+                </fieldset><br/><br/>
+                
+                <label for="aboutYourself">ספרו לנו קצת על עצמכם</label><br/>
+                <textarea class="field area`" id="aboutYourself"  rows="5"></textarea><br/><br/>
+    
+                <label for="agreement">
+                    <input  class="field" type="checkbox" id="agreement" checked/> אני מסכים/ה לתנאי השימוש
+                </label><br/><br/>
+    
+                <label for="sendForm">
+                <input class="btn" type="submit" id="sendForm" value="שליחה"/>
+                </label>
+    
+                <div id="feedback"></div>
+            </form>
+        </div>
+    </div>
+    </div>
+    <footer>
+        <ul>
+            <li><a href="contactUs.html">צור קשר</a></li>
+            <li><a href="siteMap.html">מפת האתר</a></li>
+            <li><a href="about.html">אודות</a></li>
+        </ul>
+        <p>Traveli 2022</p>
+        <p>@כל הזכויות שמורות לשירן גבאי@</p>
+        
+    </footer>
+            
+        </div>
+    </body>
+    </html>
